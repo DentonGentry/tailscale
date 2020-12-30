@@ -33,6 +33,11 @@ func TestStatusEqual(t *testing.T) {
 		want bool
 	}{
 		{
+			nil,
+			nil,
+			true,
+		},
+		{
 			&Status{},
 			nil,
 			false,
